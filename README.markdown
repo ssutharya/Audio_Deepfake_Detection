@@ -1,6 +1,6 @@
 # MFAAN-Deepfake-Detection
 
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-orange) ![License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-orange) 
 
 A Multilingual Audio Deepfake Detection system using the **Multi-Feature Audio Authenticity Network (MFAAN)**, achieving **91.76% accuracy** and **6.89% EER** on the MLADDC T2 dataset. MFAAN leverages MFCC, LFCC, and Chroma-STFT features to detect fake audio across 14 languages, outperforming the baseline (68.44% accuracy, 40.9% EER).
 
@@ -35,8 +35,8 @@ pip install kaggle numpy pandas librosa torchaudio torch torchvision scikit-lear
 ### Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/MFAAN-Deepfake-Detection.git
-   cd MFAAN-Deepfake-Detection
+   git clone https://github.com/ssutharya/Audio-Deepfake-Detection.git
+   cd Audio-Deepfake-Detection
    ```
 
 2. **Download Datasets**:
@@ -53,7 +53,7 @@ pip install kaggle numpy pandas librosa torchaudio torch torchvision scikit-lear
 ## Usage
 
 ### Running the Notebook
-The main implementation is in `deepfake-outputs.ipynb`. Follow these steps:
+The main implementation is in `audio-deepfake-detection.ipynb`. Follow these steps:
 
 1. **Preprocess Data**:
    - Run the preprocessing cells to extract MFCC, LFCC, and Chroma-STFT features from audio files.
@@ -95,10 +95,10 @@ EER: Outperforms (Model: 6.89%, Baseline: 40.90%)
 |--------------------|--------------|---------|
 | FoR + In-the-Wild  | 98.74        | 1.26    |
 | MLADDC T2 (Test)   | 91.76        | 6.89    |
-| Baseline (ResNet-18)| 68.44        | 40.90   |
+| Baseline (ResNet-50)| 68.44        | 40.90   |
 
 ## Limitations
-- Requires fine-tuning for MLADDC (33.33% accuracy without).
+- Requires fine-tuning for MLADDC (33.83% accuracy without).
 - Attention mechanisms for T3 half-truth detection are future work.
 - English-centric pre-training (FoR/In-the-Wild) may limit generalization.
 
@@ -107,12 +107,9 @@ EER: Outperforms (Model: 6.89%, Baseline: 40.90%)
 - Explore transformer-based architectures for improved temporal modeling.
 - Expand to more languages and newer generative models.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 - Datasets: FoR, In-the-Wild, MLADDC
 - Libraries: PyTorch, torchaudio, librosa, scikit-learn
 - Hardware: Kaggle GPU (Tesla T4)
 
-For questions or contributions, open an issue or contact [your-email@example.com].
+For questions or contributions, open an issue or contact [sutharya8@gmail.com].
