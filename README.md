@@ -138,7 +138,8 @@ Audio_Deepfake_Detection/
 │   └── audio-deepfake-detection.ipynb   # MFAAN: pretraining + fine-tuning on MLADDC T2
 ├── sem8/
 │   ├── add_clean.ipynb                  # MFAAN re-implementation, direct T2 training
-│   └── add_finetune.ipynb               # CAFNet: three-class + temporal localization
+│   ├── add_fientune.ipynb               # CAFNet: three-class + temporal localization
+│   └── ADD_Report.pdf           
 ├── models/
 │   ├── mfaan_t2.pth           
 │   └── cafnet_unified.pth                  # CAFNet best checkpoint (epoch 2 by val loss)
