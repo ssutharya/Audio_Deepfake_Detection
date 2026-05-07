@@ -139,6 +139,8 @@ Audio_Deepfake_Detection/
 ├── sem8/
 │   ├── add_clean.ipynb                  # MFAAN re-implementation, direct T2 training
 │   ├── add_fientune.ipynb               # CAFNet: three-class + temporal localization
+│   ├── sota-comparison.ipynb
+│   ├── cafnet-test.ipynb 
 │   └── ADD_Report.pdf           
 ├── models/
 │   ├── mfaan_t2.pth           
